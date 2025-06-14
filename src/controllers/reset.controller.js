@@ -20,6 +20,11 @@ class restController {
 
             await Like.deleteMany({ userId: userId })
 
+            await Post.updateMany(
+                { likes: userId },
+                { $pull: { likes: userId } }
+            )
+
             return res.status(200).json(response.responseSuccess("Account reset successfully. All posts, comments, and likes have been deleted."))
 
         }
