@@ -10,7 +10,7 @@ const ResetRoutes = require('./routes/reset.routes')
 
 app.use(express.json())
 app.use(morgan("dev"))
-// const cors = require("cors")
+const cors = require("cors")
 
 app.use(cors({
     origin: "http://localhost:5173/stream-social", 
