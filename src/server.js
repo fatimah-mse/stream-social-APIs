@@ -8,10 +8,8 @@ const MONGOURL = process.env.MONGOURL
 
 mongoose.connect(MONGOURL)
     .then(e => {
-        // connect to database is done
         console.log("Connected to Database Successfuly")
 
-        // server listening
         app.listen(PORT, () => {
             console.log(`Server is running successfuly on port: ${PORT}`)
         });
