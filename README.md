@@ -54,13 +54,3 @@ This is a RESTful API for a basic social media platform built with Node.js with 
 > ⚠️ Note: When deleting a post, all associated comments must be deleted as well.
 
 ---
-
-## ✅ Execution Tips
-
-- Test all APIs via **POSTMAN** before submission.
-- Keep file structure clean and organized.
-- Use **middlewares** and **helpers** efficiently.
-- Use **express-validator** for validation processes.
-- Implement proper comments for each API and middleware.
-
----
